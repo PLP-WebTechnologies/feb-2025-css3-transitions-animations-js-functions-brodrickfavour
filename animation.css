@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Define animation */
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 200px;
+        background-color: crimson;
+    }
+
+    100% {
+        left: 0;
+        background-color: royalblue;
+    }
+}
+
+.animate {
+    animation: moveRight 2s ease-in-out;
+}
